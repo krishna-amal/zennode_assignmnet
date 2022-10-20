@@ -1,0 +1,5 @@
+string_given = input("Please input your string: ")
+string_new = sorted(string_given)
+sorted_list = sorted(string_new, key=lambda c: string_new.count(c),reverse=True)
+final_string = "".join(sorted_list)
+print(final_string)
